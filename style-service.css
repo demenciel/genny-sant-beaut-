@@ -1,0 +1,227 @@
+body {
+    font-family: "Josefin Sans";
+}
+
+h2 {
+    color: white;
+    font-size: 4.5rem;
+    font-family: "Josefin Sans";
+}
+
+h3 {
+    font-family: "Josefin Sans";
+}
+
+.banner-service {
+    width: 100%;
+    height: 30rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/Depositphotos_197176834_L.jpg) no-repeat;
+    background-size: cover;
+    background-position-y: 60% ;
+    padding-left: 10%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Josefin Sans";
+}
+
+.banner-service h2 {
+    display: flex;
+}
+
+.banner-link {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    font-family: "Josefin Sans";
+}
+
+.banner-links h3 {
+    color: white;
+    margin-right: 1rem;
+    font-family: "Josefin Sans";
+    padding-top: .8rem;
+}
+
+.banner-links h3:hover {
+    color: #F473B9;
+}
+
+.arrow-right {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-top: 0.4rem;
+}
+
+/* Section 1 */
+
+.section-1-services {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: "Josefin Sans";
+}
+
+.services-titles h3 {
+    color: white;
+    font-size: 3.5rem;
+}
+
+.services-titles {
+    position: relative;
+    margin: auto;
+    text-align: left;
+    padding-top: 2rem;
+    letter-spacing: 2px;
+    padding-left: 10%;
+    padding-bottom: 2%;
+}
+
+
+
+.first-content-section {
+    width: 100%;
+    display: flex;
+    padding: 0% 10%;
+    color:white;
+    font-size: 2.5rem;
+    font-family: "Open Sans";
+}
+ .first-content-paragraph {
+     display: flex;
+     width: 70%;
+ }
+
+.first-content-image-1 {
+    display: flex;
+    width: 30%;
+    transition: transform .2s;
+}
+
+.first-content-image-1 img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 1rem 3rem 3rem rgba(0,0,0,0.5);
+    
+}
+
+.first-content-image-1:hover {
+    transform: scale(1.2);
+}
+
+.question-answer-section {
+    width: 100%;
+    color: white;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 2.5rem;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.question  p {
+    padding: 0% 10% 2% 10%; 
+    font-family: "Open Sans";
+}
+
+/* SECTION 1 fin */
+
+
+/* AVANT-Prestation */
+
+.texte-prestation h3 {
+    padding: 0;
+}
+
+.avant-prestation {
+    width: 100%;
+    background-color: rgba(25,25,25);
+    text-align: center;
+}
+
+.titre-avant-prestation {
+    text-transform: uppercase;
+}
+
+.line-division {
+    width: 50%;
+    height: 0.1rem;
+    padding: 3%;
+    position: relative;
+    margin: auto;
+}
+
+.line-1 hr {
+    width: 50%;
+    margin: auto;
+}
+
+.line-2 hr {
+    width: 50%;
+    margin: auto;
+}
+
+.texte-avant-prestation {
+    padding: 1% 10%;
+    text-align: left;
+    font-family: "Open Sans";
+    font-size: 2.5rem;
+    color: white;
+}
+
+.texte-prestation {
+    padding-top: 2%;
+}
+
+/* Prestation Fini */
+
+/* Carousel */
+
+.section-1-images {
+    width: 100%;
+    height: 120vh; 
+    background-color: rgba(25, 25, 25);
+    padding: 1%;
+    overflow: scroll;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+  }
+
+  .swiper-slide img {
+    display: block;
+    object-fit: cover;
+  }
+
+
+
+
+

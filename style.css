@@ -1,0 +1,683 @@
+/* Common Styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Open Sans", cursive;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: "Josefin Sans";
+}
+
+
+
+/* End common styles */
+/* Navbar */
+
+.navbar {
+    width: 100%;
+    height: 8rem;
+    background-color: rgba(0, 0, 0, 0.9); 
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    padding: 3rem;
+    transition: height .5s;
+}
+
+#logo-genny {
+    width: 100%;
+    margin: 0;
+}
+
+.logo-image {
+    position: relative;
+    width: 10rem;
+    margin: auto;
+    padding: 0;
+    bottom: 4rem;
+}
+
+.navbar.change {
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    font-family: "Oswald";
+    font-size: 2.5rem;
+    color: #eee;
+    letter-spacing: .1rem;
+}
+
+.nav-list {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s;
+}
+
+.change .nav-list {
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s .5s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    font-size: 3rem;
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    color: #F473B9;
+  }
+
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.nav-link {
+    font-family: "Oswald";
+    font-size: 4rem;
+    letter-spacing: .3rem;
+    color: white;
+    margin: 2rem 0rem;
+    transition: color .4s;
+
+}
+
+.nav-link:hover {
+    color: #F473B9;
+}
+
+
+/* End of navbar */
+
+/* Menu */
+
+
+.menu {
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    z-index: 100;
+    top: 2rem;
+    right: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #eee;
+    display: flex;
+    transition: transform 0.3s;
+}
+
+.line-1 {
+    width: 50%;
+
+}
+
+.change .line-1 {
+    transform: translate(100%, 1rem) rotate(-35deg);
+    transform-origin: right;
+}
+
+.line-3 {
+    margin-left: auto;
+    width: 50%;
+
+}
+
+.change .line-3 {
+    transform: translateY(-1rem) rotate(35deg);
+    transform-origin: right;
+}
+
+
+/* Section 1 */
+
+.section-1 {
+    width: 100%;
+    height: 120vh;
+    background: url(images/raphael-lovaski-pxax5WuM7eY-unsplash.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.banner-heading {
+    margin-bottom: 0rem;
+    height: 30rem;
+    perspective: 50rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+/* Heading Animation */
+.banner-heading span {
+    font-family: "Josefin Sans";
+    font-size: 12rem;
+    font-weight: 400;
+    color: white;
+    text-shadow: 0.3rem 0.3rem 0.6rem 
+    rgba(0,0,0,0.5);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateZ(8rem);
+    opacity: 0;
+    letter-spacing: 3rem;
+}
+
+.heading-1 {
+    animation: animateHeading 9s 3s infinite;
+}
+.heading-2 {
+    animation: animateHeading 9s 6s infinite;
+}
+.heading-3 {
+    animation: animateHeading 9s 9s infinite;
+}
+
+@keyframes animateHeading {
+    0% {
+        transform: translateZ(8rem);
+        opacity: 0;
+        letter-spacing: 3rem;
+    }
+
+    3% {
+        transform: translateZ(0);
+        opacity: 1;
+        letter-spacing: 1.5rem;
+    }
+
+    25% {
+        transform: translateZ(0);
+        opacity: 1;
+        letter-spacing: 1.5rem;
+    }
+
+    28% {
+        transform: translateZ(8rem);
+        opacity: 0;
+        letter-spacing: 3rem;
+    }
+
+    100% {
+        transform: translateZ(8rem);
+        opacity: 0;
+        letter-spacing: 3rem;
+    }
+}
+
+/* Paragraph */
+
+.banner-logo {
+    width: 30rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeAnimation 1s 1.5s forwards;
+}
+
+.banner-button {
+    padding: 1.5rem;
+    height: 6rem;
+    font-family: "Open Sans";
+    background-color:#F473B9;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border: .1rem solid;
+    box-shadow: 1rem 2rem 3rem rgba(0,0,0,0.5);
+    text-shadow: .6rem .3rem .2rem rgba(0,0,0,0.2);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeAnimation 1s 2s forwards ;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-button::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, white, transparent);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transform: skewX(-30deg);
+    transition: left 1.5s;
+}
+
+.banner-button:hover::before {
+    left: 100%;
+}
+
+@keyframes fadeAnimation {
+    0% {
+    opacity: 0;
+    visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+        }
+}
+
+/* Section 2 */
+
+.section-2 {
+    width: 100%;
+    height: 80vh;
+    background-color: #222020;
+    position: relative;
+    font-family: "Josefin Sans";
+    color: white;
+    text-align: center;
+}
+
+.section-2-title {
+    font-family: "Josefin Sans";
+    padding: 2%;
+}
+
+.section-2 a {
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    width: 100%;
+    height: 100%;
+}
+
+.hr-section-2 {
+    width: 20rem;
+    height: .1rem;
+    color: white;
+    position: relative;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+
+h1 {
+    font-size: 6rem;
+    padding: 1rem 0 0rem 0;
+    color:white;
+}
+
+.section-2 h2 {
+    font-size: 3rem;
+    font-family: "Josefin Sans";
+}
+
+.service {
+    box-shadow: 1rem 2rem 3rem rgba(0,0,0,0.5);
+    border-radius: 20%;
+    padding: 5%;
+    transition: transform .2s;
+    margin: 0 2.5rem;
+}
+
+.service:hover {
+    transform: scale(1.2);
+    
+}
+
+.service-1:hover {
+    z-index: 10;
+}
+.service-2:hover {
+    z-index: 10;
+}
+.service-3:hover {
+    z-index: 10;
+}
+
+.service-image {
+    width: 20rem;
+    position: relative;
+    margin: 4rem 8rem;
+}
+
+.services-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Tarifs Section */
+
+h1 {
+    font-family: "Josefin Sans";
+}
+
+.tarifs h3 {
+    padding: 2%;
+    text-align: center;
+}
+
+.tarifs-wrapper{
+    width: 100%;
+    background: linear-gradient(to right, #434343 , #000000);
+    padding: 2% 10%;
+    color: white;
+    font-size: 2rem;
+} 
+
+.tarifs-wrapper h2 {
+    padding: 2% 0rem;
+    text-align: center;
+}
+
+.tarifs-titre {
+    padding-bottom: 2%;
+}
+
+.h2-hr {
+    position: relative;
+    width: 20%;
+    color: white; 
+    margin: auto;
+}
+
+.services-tarifs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarifs {}
+
+.tarifs-header {
+    box-shadow: 1rem 2rem 3rem rgba(0,0,0,0.5);
+    border: 1px solid white;
+    width: 30%;
+    padding: 1%;
+    justify-content: center;
+    margin: auto;
+}
+
+
+.tarifs-individuel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4% 0;
+}
+
+.tarifs-individuel h4 {
+    position: relative;
+    font-family: "Open Sans";
+}
+
+.tarifs-individuel hr {
+    width: 40rem;
+    height: .1rem;
+    border : 1px dashed white;
+    position: relative;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.annulation-tarifs {
+    padding-top: 10rem;
+    font-family: "Open Sans";
+}
+
+.annulation-tarifs h3 {
+    text-decoration: underline;
+    font-size: 3rem;
+}
+
+
+
+
+/* Index page end */
+
+/* Section 4 */
+
+.hr-section-4 {
+    width: 20rem;
+}
+
+.section-4 {
+    width: 100%;
+    height: 100vh;
+    background-color: #171718;
+    display: flex;
+    align-items: center;
+    padding: 0 10rem;
+}
+
+.contact-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-details {
+    display: flex;
+    margin-bottom: 8rem;
+    flex-direction: row;
+}
+
+.contact-details div {
+    width: 15rem;
+    text-align: center;
+    margin: 4rem;
+}
+
+.contact-details i {
+    font-size: 8rem;
+    color: #F473B9;
+}
+
+.facebook img {
+    width: 60%;
+}
+
+.contact-wrapper h1 {
+    font-size: 4rem;
+    color: #ccc;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.contact-form {
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 1.5rem;
+    background-color: #444;
+    color: white;
+    border: none;
+    margin-bottom: 2rem;
+    letter-spacing: .1rem;
+}
+
+.contact-form textarea{
+    max-width: 100%;
+    max-height: 15rem;
+    min-height: 5.5rem;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #F473B9;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #fa38a3;
+}
+
+/* Footer */
+
+.footer {
+    width:100%;
+    height: 12rem;
+    background-color: #202122;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+}
+
+.footer-nav a{
+    font-family: "Josefin Sans";
+    color: white;
+    font-size: 2rem;
+    margin-right: 3rem;
+    letter-spacing: 0.1rem;
+}
+
+.footer-nav a:hover {
+    color: #F473B9;
+    transition: color 0.3s;
+}
+
+.copyright {
+    font-size: 2rem;
+    color: #ddd;
+}
+
+
+/* Maquillage Permanent Prix */
+.maquillage-permanent-prix
+{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Responsive */
+
+@media(max-width:412px) {
+    body {
+        width: 100%;
+    }
+
+    /* Navbar */
+    .menu {
+        position: absolute;
+    }
+
+    .logo-image {
+        margin: 0;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .logo {
+        visibility: hidden;
+    }
+
+    #nous-joindre-mobile {
+        text-align: center;
+    }
+
+    /* Section 1 */
+    .container {
+        width: 100%;
+    }
+
+    .section-1 {
+        width: 100%;
+        background: url(images/raphael-lovaski-pxax5WuM7eY-unsplash.jpg) no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .banner-heading {
+        visibility: hidden;
+    }
+
+    .banner-logo {
+        position: relative;
+        width: 100%;
+        bottom: 15rem;
+    }
+
+    .banner-button {
+        position: relative;
+        bottom: 15rem;
+    }
+}
