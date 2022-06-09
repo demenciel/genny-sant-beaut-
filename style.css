@@ -185,6 +185,7 @@ h1 {
     width: 100%;
     height: 120vh;
     background: url(images/raphael-lovaski-pxax5WuM7eY-unsplash.jpg) no-repeat;
+    background-position: center;
     background-size: cover;
     position: relative;
 }
@@ -343,11 +344,11 @@ h1 {
     font-family: "Josefin Sans";
     color: white;
     text-align: center;
+    padding: 0% 2% 5% 2%;
 }
 
 .section-2-title {
     font-family: "Josefin Sans";
-    padding: 2%;
 }
 
 .section-2 a {
@@ -526,7 +527,7 @@ h1 {
     background-color: #171718;
     display: flex;
     align-items: center;
-    padding: 0 10rem;
+    padding: 10% 10%;
 }
 
 .contact-wrapper {
@@ -600,7 +601,7 @@ h1 {
 
 .footer {
     width:100%;
-    height: 12rem;
+    height: 10vh;
     background-color: #202122;
     display: flex;
     justify-content: space-between;
@@ -634,9 +635,22 @@ h1 {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+/* Carousel Index */
+
+.carousel-index {
+    width: 100%;
+    height: 100rem;
+    background: url(images/284468584_1901311860257724_8257667858805882704_n.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #202122;
+}
+
+
+
 /* ------------- Responsive ------------------- */
 
-@media(max-width:450px) {
+@media(max-width:634px) {
 
     html {
         font-size: 45%;
@@ -673,13 +687,7 @@ h1 {
         width: 100%;
     }
 
-    .section-1 {
-        width: 100%;
-        height: 100vh;
-        background: url(images/raphael-lovaski-pxax5WuM7eY-unsplash.jpg) no-repeat;
-        background-size: cover;
-        position: relative;
-    }
+
 
     .banner-heading {
         visibility: hidden;
@@ -698,6 +706,56 @@ h1 {
 
     /* Section 2 */
 
+
+    /* Section 4 */
+
+    
+
+    /* Footer */
+
+    .footer {
+        flex-direction: column;
+        padding: 5% 0%;
+    }
+
+    .footer-nav {
+        display: flex;
+        position: relative;
+        float: left;
+    }
+
+    /* -------------- Pricing ------------ */
+
+   .services-tarifs {
+       margin: 5rem 0rem;
+   }
+
+   .tarifs-individuel hr {
+       width: 20rem;
+   }
+
+   .annulation-tarifs h2 {
+        padding: 5% 0%;
+   }
+
+}
+
+@media (max-width: 1180px)  {
+    .footer {
+        flex-direction: column;
+        padding: 5% 0%;
+        height: 20rem;
+    }
+
+    .footer-nav {
+        display: flex;
+        position: relative;
+        float: left;
+        padding-bottom: 5%;
+    }
+}
+
+@media (max-width: 1250px) {
     .section-2 {
         width: 100%;
         height: 130rem;
@@ -710,8 +768,6 @@ h1 {
     .services-wrapper {
         flex-direction: column;
     }
-
-    /* Section 4 */
 
     .section-4 {
         height: auto;
@@ -746,32 +802,30 @@ h1 {
         width: 120%;
         margin-bottom: 2rem;
     }  
+}
 
-    /* Footer */
+@media(max-width:821px) {
 
-    .footer {
-        flex-direction: column;
-        padding: 5% 0%;
+    .navbar {
+        width: 100%;
+        padding: 3rem 0rem;
     }
 
-    .footer-nav {
+    .menu {
+        position: fixed;
+    }
+
+    /* Section 1 */
+    .banner-heading {
+        justify-content: center;
+    }
+
+    .banner-heading span {
         display: flex;
-        position: relative;
-        float: left;
+        font-size: 80%;
+        text-align: center;
+        justify-content: center;
     }
 
-    /* -------------- Pricing ------------ */
-
-   .services-tarifs {
-       margin: 5rem 0rem;
-   }
-
-   .tarifs-individuel hr {
-       width: 20rem;
-   }
-
-   .annulation-tarifs h2 {
-        padding: 5% 0%;
-   }
-
+    
 }
