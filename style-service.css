@@ -70,7 +70,6 @@ h3 {
 
 .services-titles {
     position: relative;
-    margin: auto;
     text-align: left;
     padding-top: 2rem;
     letter-spacing: 2px;
@@ -254,16 +253,30 @@ h3 {
 
 /* ---------- Repsonsive ----------- */
 
-@media (max-width:450px) {
-
+@media (max-width:660px) {
     .first-content-image-1 {
         display: none;
+        
     }
 
-    .services-titles-mobile {
-        text-align: center;
-        padding: 2rem;
+    .services-titles {
+        text-align: left;
+        width: 100%;
+        height: auto;
+        padding-right: 5%;
     }
+    .more-photos a {
+        font-size: 60%;
+    
+    }
+
+    .more-photos-image {
+        width: 40%;
+    }
+    
+}
+
+@media (max-width:450px) {
 
     .first-content-paragraph {
         width: 100%;
@@ -278,6 +291,10 @@ h3 {
         width: 100%;
 
       }
+
+    .services-titles {
+        width: 100%;
+    }
 
     
 

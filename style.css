@@ -740,6 +740,8 @@ h1 {
 
 }
 
+
+
 @media (max-width: 1180px)  {
     .footer {
         flex-direction: column;
