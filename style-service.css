@@ -195,6 +195,7 @@ h3 {
     text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: rgba(25,25,25);
 }
 
@@ -242,10 +243,18 @@ h3 {
   }
 
   .swiper-slide img {
+    width: 50%;
     display: block;
     object-fit: cover;
   }
 
+
+  .more-photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
 /* .section-1-images-mobile {
     visibility: hidden;
 } */
@@ -265,8 +274,10 @@ h3 {
         height: auto;
         padding-right: 5%;
     }
+
+    
     .more-photos a {
-        font-size: 60%;
+        font-size: 80%;
     
     }
 
@@ -315,9 +326,7 @@ h3 {
 
       }
 
-    .more-photos {
-        padding-bottom: 5%;
-    }
+    
 }
 
 
